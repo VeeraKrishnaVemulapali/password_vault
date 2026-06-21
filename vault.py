@@ -380,6 +380,7 @@ ACTION_MAP = {
 
 def main() -> None:
     # ── Bootstrap ──────────────────────────────────────────────────────────────
+    ui.print_splash_screen()
     if not storage.vault_exists():
         ok = setup_vault()
     else:

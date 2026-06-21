@@ -69,6 +69,16 @@ def print_banner() -> None:
     print(clr("  🔐  Offline Password Vault  |  Your secrets, locked & local.\n", C.DIM))
 
 
+def print_splash_screen() -> None:
+    clear_screen()
+    print(clr(BANNER, C.CYAN, C.BOLD))
+    print(clr("  🔐  Welcome to the Offline Password Vault", C.MAGENTA, C.BOLD))
+    print(clr("  =======================================", C.MAGENTA, C.BOLD))
+    print(clr("  Your secrets, locked & local. Never stored in the cloud.\n", C.DIM))
+    input(clr("  ▶  Press Enter to start your vault session...", C.GREEN, C.BOLD))
+    clear_screen()
+
+
 def print_separator(char: str = "─", width: int = 70, colour: str = C.BLUE) -> None:
     print(clr(char * width, colour))
 
